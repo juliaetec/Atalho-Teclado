@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+ 
+    <link rel="shortcut icon" href="icon.png">
+  
+    <title>ETEC</title>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo" id="logo">
+       
+        <nav> 
+            <a href="https://www.cps.sp.gov.br/etec/">Home</a>
+            <a href="https://www.vestibulinhoetec.com.br/fale-conosco/">Contato</a>
+            <a href="https://www.cps.sp.gov.br/etec/" id="sobre">Sobre(crtl+q)</a>
+        </nav>
+    </header>
+
+    <div class="recipe-of-the-day">
+      <center>  <h3>ETEC</h3>
+        <h1>Darcy Vieira de Moraes</h1> </center>
+        <p>
+            
+            A ETEC Darcy Vieira de Moraes é uma escola exemplar, reconhecida por sua excelência educacional, 
+            ambiente acolhedor e equipe dedicada. Com instalações modernas e recursos 
+            tecnológicos, oferece uma educação de alta qualidade, preparando os alunos para o sucesso acadêmico e profissional.</p>
+    </div>
+
+    <div class="image-container">
+        <a href=file:///C:/Users/win10/Documents/3%C2%B0%20Inform%C3%A1tica%20-%20Trabalhos/Kauany%20Bueno/Atalho%20-%20Kauany/limao.png> <img src="etec.png" alt="Limão"></a>  
+    </div>
+   <center> <div id="mensagem-form">
+        <h3>Faça um comentário. </h3>
+        <input type="text" id="mensagem-input" placeholder="Digite aqui">
+        <button id="enviar-btn">Enviar</button> 
+        <p id="obrigado-msg" style="display: none; text-align: center; font-style: italic;" >Obrigado pelo seu comentário!</p>
+    </div> </center>
+</div>
+<footer>
+    <center><p>Desenvolvido por Julia Santos</p></center>
+</footer>
+<script>
+        document.getElementById("enviar-btn").addEventListener("click", function() {
+        // Exibe a mensagem de agradecimento
+        document.getElementById("obrigado-msg").style.display = "block";
+    });
+  document.addEventListener("keydown", function(event){
+if (event.ctrlKey && event.key === "q"){
+    window.location.href = "https://www.cps.sp.gov.br/etec/"; // Navegar para a âncora com o id "sobre"
+}
+        if (event.ctrlKey && event.key === "i"){
+            window.open("etec.png", "_blank"); // Abrir em uma nova guia
+        }
+
+        if (event.ctrlKey && event.key === "m") {
+            document.getElementById("mensagem-input").focus(); // Focar no input de mensagem
+        }
+    });
+</script>
+
+</body>
+</html>
